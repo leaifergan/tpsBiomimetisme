@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  charset="utf-8" />
+    <title>Game of life</title>
+    <link rel="stylesheet" href="src/css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="src/css/uikit.min.css" type="text/css" media="screen" />
+ 
+    <script type="text/javascript" src="src/js/init.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  </head>
+
+  <body>
+    <section class="uk-section uk-margin uk-margin-remove-bottom">
+      <div class="uk-container uk-container-small">
+        <div class="uk-card uk-margin uk-card-large uk-card-default uk-card-body uk-box-shadow-large" id="main-container">
+          <h1 align="center">John Conway's Game of Life</h1><br>
+          <p uk-margin>
+            <button id="startButton" class="uk-button uk-button-default uk-button-large" onclick="setup()">start</button>
+          </p>
+          <div align="center" id="zone"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+  
+</html>
+
+<style>
+  .uk-button {
+      color: #122753;
+      outline-color: #122753;
+      outline-width: 5px
+  }
+
+  .uk-button:hover {
+      background-color: #122753;
+      color: #ffffff
+  }
+</style>
